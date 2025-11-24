@@ -14,8 +14,6 @@ We maintain:
 - Queue becomes circular using:  
 (rear + 1) % size
 
-markdown
-Copy code
 
 Operations performed:
 1. **add()** → insert at rear  
@@ -38,9 +36,6 @@ Initially:
 front = -1
 rear = -1
 
-yaml
-Copy code
-
 This means the queue is empty.
 
 ---
@@ -51,8 +46,6 @@ arr = new int[n];
 this.size = n;
 }
 
-yaml
-Copy code
 - Allocates array of given size  
 - Initializes queue capacity  
 
@@ -61,8 +54,6 @@ Copy code
 ### 3️⃣ Checking if queue is empty (isempty())  
 return rear == -1 && front == -1;
 
-yaml
-Copy code
 If both are -1 → queue has no elements.
 
 ---
@@ -70,8 +61,7 @@ If both are -1 → queue has no elements.
 ### 4️⃣ Checking if queue is full (isfull())  
 (rear + 1) % size == front
 
-yaml
-Copy code
+
 This means the next circular index of rear is occupied → queue is full.
 
 💡 **Key Concept:**  
@@ -86,8 +76,6 @@ Steps:
 3. Move rear forward using:  
 rear = (rear + 1) % size;
 
-markdown
-Copy code
 4. Store element at `arr[rear]`
 
 Example insertions:
@@ -98,8 +86,6 @@ Example insertions:
 Now the queue looks like:
 front → 1 2 3 ← rear
 
-yaml
-Copy code
 
 ---
 
@@ -112,8 +98,7 @@ Steps:
 4. Else move front forward using:  
 front = (front + 1) % size;
 
-yaml
-Copy code
+
 
 This removes the **frontmost** element.
 
@@ -138,8 +123,6 @@ Output:
 2
 3
 
-yaml
-Copy code
 
 This confirms FIFO behavior.
 
