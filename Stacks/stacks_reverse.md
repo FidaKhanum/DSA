@@ -35,8 +35,6 @@ This ensures the new element goes to the bottom while the original order is rest
 ### 2️⃣ reverse() – Main Function to Reverse the Stack  
 public static void reverse(Stack<Integer> s)
 
-yaml
-Copy code
 
 This method reverses the entire stack using recursion.
 
@@ -62,8 +60,7 @@ In main():
 We also use:
 s.search(2)
 
-arduino
-Copy code
+
 to find the 1-based position of element `2` in the reversed stack.
 
 Then we print all elements until the stack becomes empty.
